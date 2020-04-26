@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body >
+    <button onclick="onClick_API()">百度</button>
+    <button onclick="onClick_163()">163</button>
+  
+    <!-- <h1>Hello World!</h1> -->
+
+    <WebView id='webview1' src="https://geekori.com" style="height:700px" autosize minwidth="600px" allowpopups plugins ></WebView>
+  
+
+    <script src='renderer.js'></script>
+
+  </body>
+</html>
